@@ -30,11 +30,6 @@ prompt = '''
         Câu trả lời phải bằng tiếng Việt. Ngắn gọn, rõ ràng, không dài dòng, không giói thiệu vai trò.
     '''
 
-   
-models = genai.list_models()
-for model in models:
-    print(model.name)
-
 
 def tra_cuu_phap_luat_voi_gemini(vehicle_type: str, violation_desc: str) -> str:
     print(vehicle_type, violation_desc)  # Debugging
