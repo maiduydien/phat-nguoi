@@ -3,3 +3,4 @@ beautifulsoup4
 python-dotenv
 google-generativeai     # nếu bạn dùng Gemini
 openai 
+beautifulsoup4
