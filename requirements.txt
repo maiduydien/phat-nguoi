@@ -2,7 +2,4 @@ fastapi
 uvicorn
 beautifulsoup4
 requests
-dotenv
-google-generativeai
-beautifulsoup4
-requests
+
