@@ -2,7 +2,7 @@
 from http.server import BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 
-from app.services.violation_pay_service import tra_cuu_phap_luat_voi_gemini
+from services.violation_pay_service import tra_cuu_phap_luat_voi_gemini
 
 class handler(BaseHTTPRequestHandler):
     def _cors(self):
@@ -42,3 +42,4 @@ class handler(BaseHTTPRequestHandler):
             self._cors()
             self.end_headers()
             self.wfile.write(f"Lỗi tra cứu mức phạt: {e}".encode("utf-8"))
+
