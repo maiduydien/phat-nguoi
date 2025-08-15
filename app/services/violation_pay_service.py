@@ -40,7 +40,7 @@ def tra_cuu_phap_luat_voi_gemini(vehicle_type: str, violation_desc: str) -> str:
     max_retries : int = 3  # Số lần thử lại nếu gặp lỗi tạm thời
     for attempt in range(max_retries):
         try:
-            model = genai.GenerativeModel("gemini-2.5-pro")  # Sử dụng model Gemini gemini-2.5-flash-lite
+            model = genai.GenerativeModel("gemini-2.5-flash-lite")  # Sử dụng model Gemini gemini-2.5-flash-lite
             response = model.generate_content(prompt_user)
             return response.text
         except Exception as e:
