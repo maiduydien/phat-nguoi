@@ -3,20 +3,6 @@ from app.api.endpoints import router
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.endpoints import routerOpenAI as fine_router
 
-
-
-
-
-
-'''
-try:
-    open("app/services/violation_service1.py")
-except FileNotFoundError:
-    print("File not found, using default violation_service.py")
-    raise
-'''
-
-
 app = FastAPI(title="Tra cứu vi phạm giao thông")
 app.add_middleware(
     CORSMiddleware,

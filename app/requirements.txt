@@ -1,8 +1,5 @@
-google-generativeai
 requests
-urllib3
-fastapi
-pathlib
-dotenv
-time
-
+beautifulsoup4
+python-dotenv
+google-generativeai     # nếu bạn dùng Gemini
+openai 
